@@ -1081,8 +1081,8 @@ prometheusOperator:
     externalIPs: []
 
   ## Deploy CRDs used by Prometheus Operator.
-  ##
-  createCustomResource: true
+  ## helm3 will create crd automatically. set it to false.
+  createCustomResource: false
 
   ## Attempt to clean up CRDs created by Prometheus Operator.
   ##
